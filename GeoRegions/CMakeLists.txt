@@ -25,6 +25,6 @@ add_executable(GeoRegions main.cpp ${SOURCE_FILES})
 set(TEST_FILES
         Testing/testMain.cpp
         Testing/UtilsTester.cpp Testing/UtilsTester.h
-        Testing/RegionTester.cpp Testing/RegionTester.h)
+        Testing/RegionTester.cpp Testing/RegionTester.h Testing/WorldTester.h Testing/WorldTester.cpp)
 
 add_executable(Test Testing/testMain.cpp ${SOURCE_FILES} ${TEST_FILES})

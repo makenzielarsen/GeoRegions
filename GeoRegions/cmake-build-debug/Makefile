@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions
+CMAKE_SOURCE_DIR = /Users/Mak/ClionProjects/HW5/GeoRegions
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles /Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles /Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -436,6 +436,87 @@ StateUserInterface.cpp.s:
 	$(MAKE) -f CMakeFiles/GeoRegions.dir/build.make CMakeFiles/GeoRegions.dir/StateUserInterface.cpp.s
 .PHONY : StateUserInterface.cpp.s
 
+Testing/RegionTester.o: Testing/RegionTester.cpp.o
+
+.PHONY : Testing/RegionTester.o
+
+# target to build an object file
+Testing/RegionTester.cpp.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/RegionTester.cpp.o
+.PHONY : Testing/RegionTester.cpp.o
+
+Testing/RegionTester.i: Testing/RegionTester.cpp.i
+
+.PHONY : Testing/RegionTester.i
+
+# target to preprocess a source file
+Testing/RegionTester.cpp.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/RegionTester.cpp.i
+.PHONY : Testing/RegionTester.cpp.i
+
+Testing/RegionTester.s: Testing/RegionTester.cpp.s
+
+.PHONY : Testing/RegionTester.s
+
+# target to generate assembly for a file
+Testing/RegionTester.cpp.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/RegionTester.cpp.s
+.PHONY : Testing/RegionTester.cpp.s
+
+Testing/UtilsTester.o: Testing/UtilsTester.cpp.o
+
+.PHONY : Testing/UtilsTester.o
+
+# target to build an object file
+Testing/UtilsTester.cpp.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/UtilsTester.cpp.o
+.PHONY : Testing/UtilsTester.cpp.o
+
+Testing/UtilsTester.i: Testing/UtilsTester.cpp.i
+
+.PHONY : Testing/UtilsTester.i
+
+# target to preprocess a source file
+Testing/UtilsTester.cpp.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/UtilsTester.cpp.i
+.PHONY : Testing/UtilsTester.cpp.i
+
+Testing/UtilsTester.s: Testing/UtilsTester.cpp.s
+
+.PHONY : Testing/UtilsTester.s
+
+# target to generate assembly for a file
+Testing/UtilsTester.cpp.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/UtilsTester.cpp.s
+.PHONY : Testing/UtilsTester.cpp.s
+
+Testing/WorldTester.o: Testing/WorldTester.cpp.o
+
+.PHONY : Testing/WorldTester.o
+
+# target to build an object file
+Testing/WorldTester.cpp.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/WorldTester.cpp.o
+.PHONY : Testing/WorldTester.cpp.o
+
+Testing/WorldTester.i: Testing/WorldTester.cpp.i
+
+.PHONY : Testing/WorldTester.i
+
+# target to preprocess a source file
+Testing/WorldTester.cpp.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/WorldTester.cpp.i
+.PHONY : Testing/WorldTester.cpp.i
+
+Testing/WorldTester.s: Testing/WorldTester.cpp.s
+
+.PHONY : Testing/WorldTester.s
+
+# target to generate assembly for a file
+Testing/WorldTester.cpp.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/Testing/WorldTester.cpp.s
+.PHONY : Testing/WorldTester.cpp.s
+
 Testing/testMain.o: Testing/testMain.cpp.o
 
 .PHONY : Testing/testMain.o
@@ -650,6 +731,15 @@ help:
 	@echo "... StateUserInterface.o"
 	@echo "... StateUserInterface.i"
 	@echo "... StateUserInterface.s"
+	@echo "... Testing/RegionTester.o"
+	@echo "... Testing/RegionTester.i"
+	@echo "... Testing/RegionTester.s"
+	@echo "... Testing/UtilsTester.o"
+	@echo "... Testing/UtilsTester.i"
+	@echo "... Testing/UtilsTester.s"
+	@echo "... Testing/WorldTester.o"
+	@echo "... Testing/WorldTester.i"
+	@echo "... Testing/WorldTester.s"
 	@echo "... Testing/testMain.o"
 	@echo "... Testing/testMain.i"
 	@echo "... Testing/testMain.s"

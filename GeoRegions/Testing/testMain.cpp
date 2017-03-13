@@ -30,4 +30,7 @@ int main() {
     regionTester.testList();
     regionTester.testDisplay();
     regionTester.testSave();
+
+    WorldTester worldTester;
+    // enter tests
 }

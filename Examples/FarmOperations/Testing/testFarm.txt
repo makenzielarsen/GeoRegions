@@ -1,8 +1,0 @@
-Chicken:Plymouth Rock,2013/6,T
-Chicken:Leghorn,2015/5,F
-Cow:Angus,2011/3,F
-Cow:Jersey,2010/3,T
-Pig:Hampshire,2012/5,
-Sheep:Merino,2014/2,2016/9
-Sheep:Suffolk,2015/4,2016/7
-Sheep:Texel,2013/10,2016/9

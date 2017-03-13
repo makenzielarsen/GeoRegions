@@ -1,4 +1,4 @@
-# Install script for directory: /Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions
+# Install script for directory: /Users/Mak/ClionProjects/HW5/GeoRegions
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

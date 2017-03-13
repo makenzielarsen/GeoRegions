@@ -1,4 +1,0 @@
-Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FarmOperations/cmake-build-debug/CMakeFiles/FarmOperations.dir
-Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FarmOperations/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FarmOperations/cmake-build-debug/CMakeFiles/Test.dir
-Y:/Dropbox/UnderGit/cs1440s17-shared/Examples/FarmOperations/cmake-build-debug/CMakeFiles/edit_cache.dir

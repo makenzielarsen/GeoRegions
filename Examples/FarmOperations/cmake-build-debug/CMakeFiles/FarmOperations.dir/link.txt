@@ -1,3 +1,0 @@
-"C:\Program Files (x86)\JetBrains\CLion 2016.3.2\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\FarmOperations.dir/objects.a
-C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\ar.exe cr CMakeFiles\FarmOperations.dir/objects.a @CMakeFiles\FarmOperations.dir\objects1.rsp
-C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  -g   -Wl,--whole-archive CMakeFiles\FarmOperations.dir/objects.a -Wl,--no-whole-archive  -o FarmOperations.exe -Wl,--out-implib,libFarmOperations.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\FarmOperations.dir\linklibs.rsp

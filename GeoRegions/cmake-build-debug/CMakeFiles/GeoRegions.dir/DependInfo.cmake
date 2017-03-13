@@ -4,21 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/City.cpp" "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/City.cpp.o"
-  "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/County.cpp" "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/County.cpp.o"
-  "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/CountyUserInterface.cpp" "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/CountyUserInterface.cpp.o"
-  "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/Menu.cpp" "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/Menu.cpp.o"
-  "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/MenuOption.cpp" "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/MenuOption.cpp.o"
-  "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/Nation.cpp" "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/Nation.cpp.o"
-  "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/NationUserInterface.cpp" "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/NationUserInterface.cpp.o"
-  "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/Region.cpp" "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/Region.cpp.o"
-  "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/State.cpp" "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/State.cpp.o"
-  "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/StateUserInterface.cpp" "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/StateUserInterface.cpp.o"
-  "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/UserInterface.cpp" "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/UserInterface.cpp.o"
-  "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/Utils.cpp" "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/Utils.cpp.o"
-  "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/World.cpp" "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/World.cpp.o"
-  "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/WorldUserInterface.cpp" "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/WorldUserInterface.cpp.o"
-  "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/main.cpp" "/Users/swc/Dropbox/UnderGit/cs1440s17-instructor/Homework/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/main.cpp.o"
+  "/Users/Mak/ClionProjects/HW5/GeoRegions/City.cpp" "/Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/City.cpp.o"
+  "/Users/Mak/ClionProjects/HW5/GeoRegions/County.cpp" "/Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/County.cpp.o"
+  "/Users/Mak/ClionProjects/HW5/GeoRegions/CountyUserInterface.cpp" "/Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/CountyUserInterface.cpp.o"
+  "/Users/Mak/ClionProjects/HW5/GeoRegions/Menu.cpp" "/Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/Menu.cpp.o"
+  "/Users/Mak/ClionProjects/HW5/GeoRegions/MenuOption.cpp" "/Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/MenuOption.cpp.o"
+  "/Users/Mak/ClionProjects/HW5/GeoRegions/Nation.cpp" "/Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/Nation.cpp.o"
+  "/Users/Mak/ClionProjects/HW5/GeoRegions/NationUserInterface.cpp" "/Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/NationUserInterface.cpp.o"
+  "/Users/Mak/ClionProjects/HW5/GeoRegions/Region.cpp" "/Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/Region.cpp.o"
+  "/Users/Mak/ClionProjects/HW5/GeoRegions/State.cpp" "/Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/State.cpp.o"
+  "/Users/Mak/ClionProjects/HW5/GeoRegions/StateUserInterface.cpp" "/Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/StateUserInterface.cpp.o"
+  "/Users/Mak/ClionProjects/HW5/GeoRegions/UserInterface.cpp" "/Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/UserInterface.cpp.o"
+  "/Users/Mak/ClionProjects/HW5/GeoRegions/Utils.cpp" "/Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/Utils.cpp.o"
+  "/Users/Mak/ClionProjects/HW5/GeoRegions/World.cpp" "/Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/World.cpp.o"
+  "/Users/Mak/ClionProjects/HW5/GeoRegions/WorldUserInterface.cpp" "/Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/WorldUserInterface.cpp.o"
+  "/Users/Mak/ClionProjects/HW5/GeoRegions/main.cpp" "/Users/Mak/ClionProjects/HW5/GeoRegions/cmake-build-debug/CMakeFiles/GeoRegions.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

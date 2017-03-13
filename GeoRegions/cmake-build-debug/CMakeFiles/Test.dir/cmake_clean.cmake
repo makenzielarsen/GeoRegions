@@ -14,6 +14,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/Test.dir/NationUserInterface.cpp.o"
   "CMakeFiles/Test.dir/StateUserInterface.cpp.o"
   "CMakeFiles/Test.dir/CountyUserInterface.cpp.o"
+  "CMakeFiles/Test.dir/Testing/UtilsTester.cpp.o"
+  "CMakeFiles/Test.dir/Testing/RegionTester.cpp.o"
+  "CMakeFiles/Test.dir/Testing/WorldTester.cpp.o"
   "Test.pdb"
   "Test"
 )
