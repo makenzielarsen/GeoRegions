@@ -96,3 +96,5 @@ fabric.properties
 *.xml
 
 *.xml
+
+GeoRegions/.idea/workspace.xml
