@@ -4,18 +4,6 @@
 #include "World.h"
 #include "WorldUserInterface.h"
 
-void load(std::ifstream& in, World* world)
-{
-    while (!in.eof())
-    {
-        Region *region = Region::create(in);
-        if (region != nullptr)
-        {
-            // TODO: Add the region to the world
-        }
-    }
-}
-
 int main()
 {
     std::cout << "Welcome to the GeoRegions system" << std::endl << std::endl;
@@ -32,8 +20,7 @@ int main()
         if (region!= nullptr && region->getType()==Region::WorldType)
         {
             world = (World*) region;
-            // TODO: Add an output line, similar to the sample code in the comment below
-            // std::cout << "Loaded a world and "  << world->getSubRegionCount() << " nations from Nations.txt" << std::endl;
+            std::cout << "Loaded a world and "  << world->getSubRegionCount() << " nations from Nations.txt" << std::endl;
         }
         else
         {
