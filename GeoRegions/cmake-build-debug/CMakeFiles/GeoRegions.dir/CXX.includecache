@@ -99,6 +99,8 @@ iomanip
 /Users/Mak/ClionProjects/HW5/GeoRegions/Region.h
 string
 -
+vector
+-
 
 /Users/Mak/ClionProjects/HW5/GeoRegions/State.cpp
 State.h

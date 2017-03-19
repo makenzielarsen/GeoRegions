@@ -128,7 +128,12 @@ Region::Region(RegionType type, const std::string data[]) :
 
 Region::~Region()
 {
-    // TODO: cleanup any dynamically allocated objects
+    if (m_subRegions.size() != 0) {
+        for (int i = 0; i < m_subRegions.size(); i++) {
+            delete m_subRegions[i];
+        }
+        m_subRegions.clear();
+    }
 }
 
 std::string Region::getRegionLabel() const
@@ -138,7 +143,11 @@ std::string Region::getRegionLabel() const
 
 unsigned int Region::computeTotalPopulation()
 {
-    // TODO: implement computeTotalPopulation, such that the result is m_population + the total population for all sub-regions
+    unsigned int totalPopulation = m_population;
+    for (int i = 0; i < m_subRegions.size(); i++) {
+        totalPopulation += m_subRegions[i]->m_population;
+    }
+    return totalPopulation;
 }
 
 void Region::list(std::ostream& out)
@@ -146,9 +155,10 @@ void Region::list(std::ostream& out)
     out << std::endl;
     out << getName() << ":" << std::endl;
 
-    // TODO: implement the loop in the list method
-    // foreach subregion, print out
-    //      id    name
+    for (int i = 0; i < m_subRegions.size(); i++) {
+        out << m_subRegions[i]->getId() << "    " << m_subRegions[i]->getName() << std::endl;
+    }
+    out << std::endl;
 }
 
 void Region::display(std::ostream& out, unsigned int displayLevel, bool showChild)
@@ -214,7 +224,8 @@ void Region::loadChildren(std::istream& in)
             Region* child = create(line);
             if (child!= nullptr)
             {
-                // TODO: Add the new sub-region to this region
+                m_subRegions.push_back(child);
+                m_subRegionsCount += 1;
                 child->loadChildren(in);
             }
         }

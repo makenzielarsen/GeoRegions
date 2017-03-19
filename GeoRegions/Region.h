@@ -6,6 +6,7 @@
 #define GEO_REGIONS_REGION_H
 
 #include <string>
+#include <vector>
 
 class Region {
 public:
@@ -18,6 +19,8 @@ protected:
     unsigned int    m_population = 0;
     double          m_area = 0;
     bool            m_isValid = false;
+    std::vector<Region*> m_subRegions;
+    int             m_subRegionsCount = 0;
 
     // TODO: Add data members to manage sub-regions
 private:
