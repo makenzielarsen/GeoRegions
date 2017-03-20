@@ -145,7 +145,7 @@ unsigned int Region::computeTotalPopulation()
 {
     unsigned int totalPopulation = m_population;
     for (int i = 0; i < m_subRegions.size(); i++) {
-        totalPopulation += m_subRegions[i]->m_population;
+        totalPopulation += m_subRegions[i]->computeTotalPopulation();
     }
     return totalPopulation;
 }
@@ -182,9 +182,9 @@ void Region::display(std::ostream& out, unsigned int displayLevel, bool showChil
 
     if (showChild)
     {
-        // TODO: implement loop in display method
-        // foreach subregion
-        //      display that subregion at displayLevel+1 with the same showChild value
+        for (int i = 0; i < m_subRegions.size(); i++) {
+            m_subRegions[i]->display(out, displayLevel + 1, showChild);
+        }
     }
 }
 
@@ -196,9 +196,9 @@ void Region::save(std::ostream& out)
         << "," << getArea()
         << std::endl;
 
-    // TODO: implement loop in save method to save each sub-region
-    // foreach subregion,
-    //      save that region
+    for (int i = 0; i < m_subRegions.size(); i++) {
+        m_subRegions[i]->save(out);
+    }
 
     out << regionDelimiter << std::endl;
 }

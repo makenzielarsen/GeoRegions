@@ -13,5 +13,5 @@ World::World() : Region(WorldType, worldData)
 }
 
 int World::getSubRegionCount(){
-
+    return m_subRegionsCount;
 }
