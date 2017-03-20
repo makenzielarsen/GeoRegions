@@ -362,7 +362,7 @@ void RegionTester::testGettersAndSetters() {
 
         if (region->getId() != 0) {
             std::cout << "Failed to initialize the area for region from " << inputString << std::endl;
-            std::cout << "\tExpected 20, but created a " << region->getArea() << std::endl;
+            std::cout << "\tExpected 0, but created a " << region->getId() << std::endl;
         }
 
         region->setName("Really Tiny County");
@@ -410,7 +410,7 @@ void RegionTester::testSubRegions() {
     }
 
     std::cout << "Completed." << std::endl;
-}
+};
 
 void RegionTester::testComputeTotalPopulation() {
     std::cout << "RegionTester::testComputeTotalPopulation" << std::endl;
