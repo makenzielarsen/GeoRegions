@@ -9,8 +9,7 @@
 #include <iostream>
 #include <fstream>
 
-void RegionTester::testCreateFromStream()
-{
+void RegionTester::testCreateFromStream() {
     std::cout << "RegionTester::testCreateFromStream" << std::endl;
 
     // Load a file with just the world in it
@@ -21,14 +20,12 @@ void RegionTester::testCreateFromStream()
         if (region==nullptr)
         {
             std::cout << "Failed to create a region from " << inputFile << std::endl;
-            return;
         }
 
         if (region->getType()!=Region::RegionType::WorldType)
         {
             std::cout << "Failed to create correct type of region from " << inputFile << std::endl;
             std::cout << "\tExpected World region type, but created a " << region->getRegionLabel() << std::endl;
-            return;
         }
     }
 
@@ -40,21 +37,18 @@ void RegionTester::testCreateFromStream()
         if (world==nullptr)
         {
             std::cout << "Failed to create a region from " << inputFile << std::endl;
-            return;
         }
 
         if (world->getType()!=Region::RegionType::WorldType)
         {
             std::cout << "Failed to create correct type of region from " << inputFile << std::endl;
             std::cout << "\tExpected World region type, but created a " << world->getRegionLabel() << std::endl;
-            return;
         }
 
         if (world->getSubRegionCount()!=4)
         {
             std::cout << "Failed to load the four expected nations from " << inputFile << std::endl;
             std::cout << "\tExpected 4 nations, but loaded a " << world->getSubRegionCount() << std::endl;
-            return;
         }
 
         for (unsigned int nationIndex=0; nationIndex < world->getSubRegionCount(); nationIndex++)
@@ -64,15 +58,13 @@ void RegionTester::testCreateFromStream()
             {
                 std::cout << "Failed to create correct type of sub-region in the world from " << inputFile << std::endl;
                 std::cout << "\tExpected nation sub-region type, but created a " << nation->getRegionLabel() << std::endl;
-                return;
             }
         }
     }
-
+    std::cout << "Completed." << std::endl;
 }
 
-void RegionTester::testCreateFromString()
-{
+void RegionTester::testCreateFromString() {
     std::cout << "RegionTester::testCreateFromString" << std::endl;
 
     {
@@ -80,31 +72,26 @@ void RegionTester::testCreateFromString()
         Region *region = Region::create(inputString);
         if (region == nullptr) {
             std::cout << "Failed to create a region from " << inputString << std::endl;
-            return;
         }
 
         if (region->getType() != Region::RegionType::NationType) {
             std::cout << "Failed to create correct type of region from " << inputString << std::endl;
             std::cout << "\tExpected Country region type, but got " << region->getRegionLabel() << std::endl;
-            return;
         }
 
         if (region->getName() != "Tiny Country") {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected \"Tiny Country\", but got \"" << region->getPopulation() << "\"" << std::endl;
-            return;
         }
 
         if (region->getPopulation() != 30) {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected 30, but created a " << region->getPopulation() << std::endl;
-            return;
         }
 
         if (region->getArea() != 20) {
             std::cout << "Failed to initialize the area for region from " << inputString << std::endl;
             std::cout << "\tExpected 20, but created a " << region->getArea() << std::endl;
-            return;
         }
     }
 
@@ -113,31 +100,26 @@ void RegionTester::testCreateFromString()
         Region *region = Region::create(inputString);
         if (region == nullptr) {
             std::cout << "Failed to create a region from " << inputString << std::endl;
-            return;
         }
 
         if (region->getType() != Region::RegionType::StateType) {
             std::cout << "Failed to create correct type of region from " << inputString << std::endl;
             std::cout << "\tExpected State region type, but got " << region->getRegionLabel() << std::endl;
-            return;
         }
 
         if (region->getName() != "Tiny State") {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected \"Tiny State\", but got \"" << region->getPopulation() << "\"" << std::endl;
-            return;
         }
 
         if (region->getPopulation() != 30) {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected 30, but created a " << region->getPopulation() << std::endl;
-            return;
         }
 
         if (region->getArea() != 20) {
             std::cout << "Failed to initialize the area for region from " << inputString << std::endl;
             std::cout << "\tExpected 20, but created a " << region->getArea() << std::endl;
-            return;
         }
     }
 
@@ -146,31 +128,26 @@ void RegionTester::testCreateFromString()
         Region *region = Region::create(inputString);
         if (region == nullptr) {
             std::cout << "Failed to create a region from " << inputString << std::endl;
-            return;
         }
 
         if (region->getType() != Region::RegionType::CountyType) {
             std::cout << "Failed to create correct type of region from " << inputString << std::endl;
             std::cout << "\tExpected County region type, but got " << region->getRegionLabel() << std::endl;
-            return;
         }
 
         if (region->getName() != "Tiny County") {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected \"Tiny County\", but got \"" << region->getPopulation() << "\"" << std::endl;
-            return;
         }
 
         if (region->getPopulation() != 30) {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected 30, but created a " << region->getPopulation() << std::endl;
-            return;
         }
 
         if (region->getArea() != 20) {
             std::cout << "Failed to initialize the area for region from " << inputString << std::endl;
             std::cout << "\tExpected 20, but created a " << region->getArea() << std::endl;
-            return;
         }
     }
 
@@ -179,31 +156,26 @@ void RegionTester::testCreateFromString()
         Region *region = Region::create(inputString);
         if (region == nullptr) {
             std::cout << "Failed to create a region from " << inputString << std::endl;
-            return;
         }
 
         if (region->getType() != Region::RegionType::CityType) {
             std::cout << "Failed to create correct type of region from " << inputString << std::endl;
             std::cout << "\tExpected City region type, but got " << region->getRegionLabel() << std::endl;
-            return;
         }
 
         if (region->getName() != "Tiny City") {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected \"Tiny City\", but got \"" << region->getPopulation() << "\"" << std::endl;
-            return;
         }
 
         if (region->getPopulation() != 30) {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected 30, but created a " << region->getPopulation() << std::endl;
-            return;
         }
 
         if (region->getArea() != 20) {
             std::cout << "Failed to initialize the area for region from " << inputString << std::endl;
             std::cout << "\tExpected 20, but created a " << region->getArea() << std::endl;
-            return;
         }
     }
 
@@ -212,7 +184,6 @@ void RegionTester::testCreateFromString()
         Region *region = Region::create(inputString);
         if (region != nullptr) {
             std::cout << "Failed to recognize a bad data string in create method, inputString=" << inputString << std::endl;
-            return;
         }
     }
 
@@ -221,14 +192,12 @@ void RegionTester::testCreateFromString()
         Region *region = Region::create(inputString);
         if (region != nullptr) {
             std::cout << "Failed to recognize a bad data string in create method, inputString=" << inputString << std::endl;
-            return;
         }
     }
-
+    std::cout << "Completed." << std::endl;
 }
 
-void RegionTester::testCreateFromTypeAndString()
-{
+void RegionTester::testCreateFromTypeAndString() {
     std::cout << "RegionTester::testCreateFromTypeAndString" << std::endl;
 
     {
@@ -236,31 +205,26 @@ void RegionTester::testCreateFromTypeAndString()
         Region *region = Region::create(Region::NationType,inputString);
         if (region == nullptr) {
             std::cout << "Failed to create a region from " << inputString << std::endl;
-            return;
         }
 
         if (region->getType() != Region::RegionType::NationType) {
             std::cout << "Failed to create correct type of region from " << inputString << std::endl;
             std::cout << "\tExpected Nation region type, but got " << region->getRegionLabel() << std::endl;
-            return;
         }
 
         if (region->getName() != "Tiny Country") {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected \"Tiny County\", but got \"" << region->getPopulation() << "\"" << std::endl;
-            return;
         }
 
         if (region->getPopulation() != 30) {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected 30, but created a " << region->getPopulation() << std::endl;
-            return;
         }
 
         if (region->getArea() != 20) {
             std::cout << "Failed to initialize the area for region from " << inputString << std::endl;
             std::cout << "\tExpected 20, but created a " << region->getArea() << std::endl;
-            return;
         }
     }
 
@@ -269,31 +233,26 @@ void RegionTester::testCreateFromTypeAndString()
         Region *region = Region::create(Region::RegionType::StateType, inputString);
         if (region == nullptr) {
             std::cout << "Failed to create a region from " << inputString << std::endl;
-            return;
         }
 
         if (region->getType() != Region::RegionType::StateType) {
             std::cout << "Failed to create correct type of region from " << inputString << std::endl;
             std::cout << "\tExpected State region type, but got " << region->getRegionLabel() << std::endl;
-            return;
         }
 
         if (region->getName() != "Tiny State") {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected \"Tiny State\", but got \"" << region->getPopulation() << "\"" << std::endl;
-            return;
         }
 
         if (region->getPopulation() != 30) {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected 30, but created a " << region->getPopulation() << std::endl;
-            return;
         }
 
         if (region->getArea() != 20) {
             std::cout << "Failed to initialize the area for region from " << inputString << std::endl;
             std::cout << "\tExpected 20, but created a " << region->getArea() << std::endl;
-            return;
         }
     }
 
@@ -302,31 +261,26 @@ void RegionTester::testCreateFromTypeAndString()
         Region *region = Region::create(Region::RegionType::CountyType, inputString);
         if (region == nullptr) {
             std::cout << "Failed to create a region from " << inputString << std::endl;
-            return;
         }
 
         if (region->getType() != Region::RegionType::CountyType) {
             std::cout << "Failed to create correct type of region from " << inputString << std::endl;
             std::cout << "\tExpected County region type, but got " << region->getRegionLabel() << std::endl;
-            return;
         }
 
         if (region->getName() != "Tiny County") {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected \"Tiny County\", but got \"" << region->getPopulation() << "\"" << std::endl;
-            return;
         }
 
         if (region->getPopulation() != 30) {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected 30, but created a " << region->getPopulation() << std::endl;
-            return;
         }
 
         if (region->getArea() != 20) {
             std::cout << "Failed to initialize the area for region from " << inputString << std::endl;
             std::cout << "\tExpected 20, but created a " << region->getArea() << std::endl;
-            return;
         }
     }
 
@@ -335,31 +289,26 @@ void RegionTester::testCreateFromTypeAndString()
         Region *region = Region::create(Region::RegionType::CityType, inputString);
         if (region == nullptr) {
             std::cout << "Failed to create a region from " << inputString << std::endl;
-            return;
         }
 
         if (region->getType() != Region::RegionType::CityType) {
             std::cout << "Failed to create correct type of region from " << inputString << std::endl;
             std::cout << "\tExpected City region type, but got " << region->getRegionLabel() << std::endl;
-            return;
         }
 
         if (region->getName() != "Tiny City") {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected \"Tiny City\", but got \"" << region->getPopulation() << "\"" << std::endl;
-            return;
         }
 
         if (region->getPopulation() != 30) {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected 30, but created a " << region->getPopulation() << std::endl;
-            return;
         }
 
         if (region->getArea() != 20) {
             std::cout << "Failed to initialize the area for region from " << inputString << std::endl;
             std::cout << "\tExpected 20, but created a " << region->getArea() << std::endl;
-            return;
         }
     }
 
@@ -368,7 +317,6 @@ void RegionTester::testCreateFromTypeAndString()
         Region *r1 = Region::create(Region::NationType,inputString);
         if (r1 != nullptr) {
             std::cout << "Failed to recognize a bad data string in create method, inputString=" << inputString << std::endl;
-            return;
         }
     }
 
@@ -377,14 +325,12 @@ void RegionTester::testCreateFromTypeAndString()
         Region *r1 = Region::create(Region::NationType, inputString);
         if (r1 != nullptr) {
             std::cout << "Failed to recognize a bad data string in create method, inputString=" << inputString << std::endl;
-            return;
         }
     }
-
+    std::cout << "Completed." << std::endl;
 }
 
-void RegionTester::testGettersAndSetters()
-{
+void RegionTester::testGettersAndSetters() {
     std::cout << "RegionTester::testGettersAndSetters" << std::endl;
 
     {
@@ -392,66 +338,92 @@ void RegionTester::testGettersAndSetters()
         Region *region = Region::create(Region::NationType,inputString);
         if (region == nullptr) {
             std::cout << "Failed to create a region from " << inputString << std::endl;
-            return;
         }
 
         if (region->getType() != Region::RegionType::NationType) {
             std::cout << "Failed to create correct type of region from " << inputString << std::endl;
             std::cout << "\tExpected Nation region type, but got " << region->getRegionLabel() << std::endl;
-            return;
         }
 
         if (region->getName() != "Tiny Country") {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected \"Tiny County\", but got \"" << region->getPopulation() << "\"" << std::endl;
-            return;
         }
 
         if (region->getPopulation() != 30) {
             std::cout << "Failed to initialize the population for region from " << inputString << std::endl;
             std::cout << "\tExpected 30, but created a " << region->getPopulation() << std::endl;
-            return;
         }
 
         if (region->getArea() != 20) {
             std::cout << "Failed to initialize the area for region from " << inputString << std::endl;
             std::cout << "\tExpected 20, but created a " << region->getArea() << std::endl;
-            return;
+        }
+
+        if (region->getId() != 0) {
+            std::cout << "Failed to initialize the area for region from " << inputString << std::endl;
+            std::cout << "\tExpected 20, but created a " << region->getArea() << std::endl;
         }
 
         region->setName("Really Tiny County");
         if (region->getName() != "Really Tiny County") {
             std::cout << "Failed to set the name for region from " << inputString << std::endl;
             std::cout << "\tExpected \"Really Tiny County\", but got \"" << region->getName() << "\"" << std::endl;
-            return;
         }
 
         region->setPopulation(5);
         if (region->getPopulation()!=5) {
             std::cout << "Failed to set the population for region from " << inputString << std::endl;
             std::cout << "\tExpected 5, but got \"" << region->getPopulation() << "\"" << std::endl;
-            return;
         }
 
         region->setArea(2);
         if (region->getArea()!=2) {
             std::cout << "Failed to set the area for region from " << inputString << std::endl;
             std::cout << "\tExpected 2, but got \"" << region->getArea() << "\"" << std::endl;
-            return;
         }
     }
+    std::cout << "Completed." << std::endl;
 }
 
-void RegionTester::testSubRegions()
-{
+void RegionTester::testSubRegions() {
     std::cout << "RegionTester::testSubRegions" << std::endl;
 
-    // TODO: Add test cases for managing sub-regions
+    std::string inputFile = "Nations.txt";
+    std::ifstream inputStream(inputFile);
+    Region* region = Region::create(inputStream);
+    if (region==nullptr)
+    {
+        std::cout << "Failed to create a region from " << inputFile << std::endl;
+    }
+
+    Region* tester = region->lookupSubRegionById(2);
+    if(tester != region->getSubRegions()[2]) {
+        std::cout << "Failed to lookup by ID" << std::endl;
+    }
+
+    Region* newRegion = Region::create(Region::RegionType::NationType, "Mexico, 122300000, 758400");
+    region->addRegion(newRegion);
+
+    if (region->getSubRegionCount() != 13 || region->getSubRegions().size() != 13) {
+        std::cout << "Failed to add region" << std::endl;
+    }
+
+    std::cout << "Completed." << std::endl;
 }
 
-void RegionTester::testComputeTotalPopulation()
-{
+void RegionTester::testComputeTotalPopulation() {
     std::cout << "RegionTester::testComputeTotalPopulation" << std::endl;
 
-    // TODO: Add test cases for computeTotalPopulation
+    std::string inputFile = "Nations.txt";
+    std::ifstream inputStream(inputFile);
+    Region* region = Region::create(inputStream);
+
+    int totalPopulation = region->computeTotalPopulation();
+
+    if(totalPopulation != 4113601){
+        std::cout << "Total population calculation failed. Expected 4,113,601. Got " << totalPopulation << std::endl;
+    }
+
+    std::cout << "Completed." << std::endl;
 }

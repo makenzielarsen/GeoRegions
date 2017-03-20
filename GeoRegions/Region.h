@@ -47,10 +47,11 @@ public:
     double getArea() const { return m_area; }
     void setArea(double area) { m_area = area; }
     bool getIsValid() const { return m_isValid; }
-    std::vector<Region*> getSubRegions() { return m_subRegions; };
     Region* lookupSubRegionById(int id);
     void addRegion(Region* newRegion);
+    void deleteRegion(int id);
     int getSubRegionCount() { return m_subRegionsCount; };
+    std::vector<Region*> getSubRegions() { return m_subRegions; };
 
     // TODO: Add method to compute total population, as m_population + the total population for all sub-regions
     unsigned int computeTotalPopulation();

@@ -245,6 +245,11 @@ void Region::addRegion(Region* newRegion){
     m_subRegions.push_back(newRegion);
 }
 
+void Region::deleteRegion(int id) {
+    Region* region = lookupSubRegionById(id);
+    delete region;
+}
+
 unsigned int Region::getNextId()
 {
     if (m_nextId==UINT32_MAX)

@@ -5,7 +5,6 @@
 #include <iostream>
 #include "UtilsTester.h"
 #include "RegionTester.h"
-#include "WorldTester.h"
 
 int main() {
 

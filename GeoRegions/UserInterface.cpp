@@ -216,7 +216,7 @@ void UserInterface::remove()
         unsigned int id = convertStringToUnsignedInt(input, &valid);
         if (valid && id>0)
         {
-            // TODO: delete selected region
+            m_currentRegion->deleteRegion(id);
             std::cout << "Deleted!" << std::endl;
         }
         else

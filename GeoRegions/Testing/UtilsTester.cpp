@@ -9,8 +9,7 @@
 
 #include "../Utils.h"
 
-void UtilsTester::testSplit()
-{
+void UtilsTester::testSplit() {
     std::cout << "Execute UtilsTester::testSplit" << std::endl;
 
     // Check good cases
@@ -88,10 +87,10 @@ void UtilsTester::testSplit()
                   << lineToSplit << "\": result value not as expected" << std::endl;
         return;
     }
+    std::cout << "Completed." << std::endl;
 }
 
-void UtilsTester::testConvertToInt()
-{
+void UtilsTester::testConvertToInt() {
     std::cout << "Execute UtilsTester::testConvertToInt" << std::endl;
 
     bool isValid;
@@ -186,10 +185,10 @@ void UtilsTester::testConvertToInt()
                   << "\" result=" << result << " isValid=" << isValid << std::endl;
         return;
     }
+    std::cout << "Completed." << std::endl;
 }
 
-void UtilsTester::testConvertToUnsignedInt()
-{
+void UtilsTester::testConvertToUnsignedInt() {
     std::cout << "Execute UtilsTester::testConvertToUnsignedInt" << std::endl;
 
     bool isValid;
@@ -277,11 +276,11 @@ void UtilsTester::testConvertToUnsignedInt()
                   << "\" result=" << result << " isValid=" << isValid << std::endl;
         return;
     }
+    std::cout << "Completed." << std::endl;
 }
 
 
-void UtilsTester::testConvertToDouble()
-{
+void UtilsTester::testConvertToDouble() {
     std::cout << "Execute UtilsTester::testConvertToDouble" << std::endl;
 
     bool isValid;
@@ -408,11 +407,10 @@ void UtilsTester::testConvertToDouble()
                   << "\" result=" << result << " isValid=" << isValid << std::endl;
         return;
     }
-
+    std::cout << "Completed." << std::endl;
 }
 
-void UtilsTester::testLeftTrim()
-{
+void UtilsTester::testLeftTrim() {
     std::cout << "Execute UtilsTester::testLeftTrim" << std::endl;
 
     std::string s = "ABC";
@@ -486,12 +484,11 @@ void UtilsTester::testLeftTrim()
                   << "\" result=" << result << std::endl;
         return;
     }
-
+    std::cout << "Completed." << std::endl;
 }
 
 
-void UtilsTester::testRightTrim()
-{
+void UtilsTester::testRightTrim() {
     std::cout << "Execute UtilsTester::testRightTrim" << std::endl;
 
     std::string s = "ABC";
@@ -565,11 +562,10 @@ void UtilsTester::testRightTrim()
                   << "\" result=" << result << std::endl;
         return;
     }
-
+    std::cout << "Completed." << std::endl;
 }
 
-void UtilsTester::testTrim()
-{
+void UtilsTester::testTrim() {
     std::cout << "Execute UtilsTester::testTrim" << std::endl;
 
     std::string s = "ABC";
@@ -643,7 +639,5 @@ void UtilsTester::testTrim()
                   << "\" result=" << result << std::endl;
         return;
     }
-
-
+    std::cout << "Completed." << std::endl;
 }
-
