@@ -62,6 +62,7 @@ void RegionTester::testCreateFromStream() {
         }
     }
     std::cout << "Completed." << std::endl;
+    std::cout << std::endl;
 }
 
 void RegionTester::testCreateFromString() {
@@ -195,6 +196,7 @@ void RegionTester::testCreateFromString() {
         }
     }
     std::cout << "Completed." << std::endl;
+    std::cout << std::endl;
 }
 
 void RegionTester::testCreateFromTypeAndString() {
@@ -328,6 +330,7 @@ void RegionTester::testCreateFromTypeAndString() {
         }
     }
     std::cout << "Completed." << std::endl;
+    std::cout << std::endl;
 }
 
 void RegionTester::testGettersAndSetters() {
@@ -384,6 +387,7 @@ void RegionTester::testGettersAndSetters() {
         }
     }
     std::cout << "Completed." << std::endl;
+    std::cout << std::endl;
 }
 
 void RegionTester::testSubRegions() {
@@ -410,6 +414,7 @@ void RegionTester::testSubRegions() {
     }
 
     std::cout << "Completed." << std::endl;
+    std::cout << std::endl;
 };
 
 void RegionTester::testComputeTotalPopulation() {
@@ -426,4 +431,5 @@ void RegionTester::testComputeTotalPopulation() {
     }
 
     std::cout << "Completed." << std::endl;
+    std::cout << std::endl;
 }
