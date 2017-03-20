@@ -27,10 +27,4 @@ int main() {
     regionTester.testGettersAndSetters();
     regionTester.testSubRegions();
     regionTester.testComputeTotalPopulation();
-    regionTester.testList();
-    regionTester.testDisplay();
-    regionTester.testSave();
-
-    WorldTester worldTester;
-    // enter tests
 }
