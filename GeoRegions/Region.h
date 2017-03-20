@@ -22,7 +22,6 @@ protected:
     std::vector<Region*> m_subRegions;
     int             m_subRegionsCount = 0;
 
-    // TODO: Add data members to manage sub-regions
 private:
     static unsigned int m_nextId;
 
@@ -48,8 +47,10 @@ public:
     double getArea() const { return m_area; }
     void setArea(double area) { m_area = area; }
     bool getIsValid() const { return m_isValid; }
-
-    // TODO: Add methods to manage subregions
+    std::vector<Region*> getSubRegions() { return m_subRegions; };
+    Region* lookupSubRegionById(int id);
+    void addRegion(Region* newRegion);
+    int getSubRegionCount() { return m_subRegionsCount; };
 
     // TODO: Add method to compute total population, as m_population + the total population for all sub-regions
     unsigned int computeTotalPopulation();
@@ -62,8 +63,6 @@ protected:
     virtual void validate();
     void loadChildren(std::istream& in);
     static unsigned int getNextId();
-
-    // TODO: add whatever other helper methods you might need
 };
 
 

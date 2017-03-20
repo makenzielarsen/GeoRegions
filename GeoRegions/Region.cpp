@@ -232,6 +232,19 @@ void Region::loadChildren(std::istream& in)
     }
 }
 
+Region* Region::lookupSubRegionById(int id) {
+    for (int i = 0; i < m_subRegions.size(); i++) {
+        if (m_subRegions[i]->getId() == id) {
+            return m_subRegions[i];
+        }
+    }
+    return m_subRegions[id];
+}
+
+void Region::addRegion(Region* newRegion){
+    m_subRegions.push_back(newRegion);
+}
+
 unsigned int Region::getNextId()
 {
     if (m_nextId==UINT32_MAX)
