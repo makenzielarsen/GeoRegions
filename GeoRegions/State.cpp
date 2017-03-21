@@ -4,6 +4,6 @@
 
 #include "State.h"
 
-State::State(const std::string data[]) : Region(NationType, data) {
+State::State(const std::string data[]) : Region(StateType, data) {
     validate();
 }
