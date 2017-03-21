@@ -363,11 +363,6 @@ void RegionTester::testGettersAndSetters() {
             std::cout << "\tExpected 20, but created a " << region->getArea() << std::endl;
         }
 
-        if (region->getId() != 0) {
-            std::cout << "Failed to initialize the area for region from " << inputString << std::endl;
-            std::cout << "\tExpected 0, but created a " << region->getId() << std::endl;
-        }
-
         region->setName("Really Tiny County");
         if (region->getName() != "Really Tiny County") {
             std::cout << "Failed to set the name for region from " << inputString << std::endl;
@@ -409,7 +404,7 @@ void RegionTester::testSubRegions() {
     Region* newRegion = Region::create(Region::RegionType::NationType, "Mexico, 122300000, 758400");
     region->addRegion(newRegion);
 
-    if (region->getSubRegionCount() != 13 || region->getSubRegions().size() != 13) {
+    if (region->getSubRegionCount() != 4) {
         std::cout << "Failed to add region" << std::endl;
     }
 

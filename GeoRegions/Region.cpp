@@ -243,6 +243,7 @@ Region* Region::lookupSubRegionById(int id) {
 
 void Region::addRegion(Region* newRegion){
     m_subRegions.push_back(newRegion);
+    m_subRegionsCount += 1;
 }
 
 void Region::deleteRegion(int id) {
