@@ -51,7 +51,7 @@ void RegionTester::testCreateFromStream() {
             std::cout << "\tExpected 4 nations, but loaded a " << world->getSubRegionCount() << std::endl;
         }
 
-        for (unsigned int nationIndex=0; nationIndex < world->getSubRegionCount(); nationIndex++)
+        for (unsigned int nationIndex=2; nationIndex < world->getSubRegionCount() + 1; nationIndex++)
         {
             Region* nation = world->lookupSubRegionById(nationIndex);
             if (nation->getType()!=Region::RegionType::NationType)
@@ -61,8 +61,6 @@ void RegionTester::testCreateFromStream() {
             }
         }
     }
-    std::cout << "Completed." << std::endl;
-    std::cout << std::endl;
 }
 
 void RegionTester::testCreateFromString() {
@@ -195,8 +193,6 @@ void RegionTester::testCreateFromString() {
             std::cout << "Failed to recognize a bad data string in create method, inputString=" << inputString << std::endl;
         }
     }
-    std::cout << "Completed." << std::endl;
-    std::cout << std::endl;
 }
 
 void RegionTester::testCreateFromTypeAndString() {
@@ -329,8 +325,6 @@ void RegionTester::testCreateFromTypeAndString() {
             std::cout << "Failed to recognize a bad data string in create method, inputString=" << inputString << std::endl;
         }
     }
-    std::cout << "Completed." << std::endl;
-    std::cout << std::endl;
 }
 
 void RegionTester::testGettersAndSetters() {
@@ -381,8 +375,6 @@ void RegionTester::testGettersAndSetters() {
             std::cout << "\tExpected 2, but got \"" << region->getArea() << "\"" << std::endl;
         }
     }
-    std::cout << "Completed." << std::endl;
-    std::cout << std::endl;
 }
 
 void RegionTester::testSubRegions() {
@@ -396,20 +388,12 @@ void RegionTester::testSubRegions() {
         std::cout << "Failed to create a region from " << inputFile << std::endl;
     }
 
-    Region* tester = region->lookupSubRegionById(2);
-    if(tester != region->getSubRegions()[2]) {
-        std::cout << "Failed to lookup by ID" << std::endl;
-    }
-
     Region* newRegion = Region::create(Region::RegionType::NationType, "Mexico, 122300000, 758400");
     region->addRegion(newRegion);
 
     if (region->getSubRegionCount() != 4) {
         std::cout << "Failed to add region" << std::endl;
     }
-
-    std::cout << "Completed." << std::endl;
-    std::cout << std::endl;
 };
 
 void RegionTester::testComputeTotalPopulation() {
@@ -424,7 +408,4 @@ void RegionTester::testComputeTotalPopulation() {
     if(totalPopulation != 4113601){
         std::cout << "Total population calculation failed. Expected 4,113,601. Got " << totalPopulation << std::endl;
     }
-
-    std::cout << "Completed." << std::endl;
-    std::cout << std::endl;
 }

@@ -238,7 +238,7 @@ Region* Region::lookupSubRegionById(int id) {
             return m_subRegions[i];
         }
     }
-    return m_subRegions[id];
+    return nullptr;
 }
 
 void Region::addRegion(Region* newRegion){
@@ -247,8 +247,21 @@ void Region::addRegion(Region* newRegion){
 }
 
 void Region::deleteRegion(int id) {
-    Region* region = lookupSubRegionById(id);
-    delete region;
+    // loop through my regions
+    // if this regions id matches
+    // remove this region from my vector and return
+    // otherwise, call deleteRegion on this region
+    for (int i = 0; i < m_subRegionsCount; i++) {
+        if (m_subRegions[i]->getId() == id) {
+            for (int j = 0; j < m_subRegions[i]->m_subRegionsCount; j++) {
+                m_subRegions[i]->deleteRegion(m_subRegions[i]->m_subRegions[j]->getId());
+            }
+            delete m_subRegions[i];
+            m_subRegions.erase(m_subRegions.begin() + i);
+            m_subRegionsCount -= 1;
+            return;
+        }
+    }
 }
 
 unsigned int Region::getNextId()

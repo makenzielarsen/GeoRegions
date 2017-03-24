@@ -87,8 +87,6 @@ void UtilsTester::testSplit() {
                   << lineToSplit << "\": result value not as expected" << std::endl;
         return;
     }
-    std::cout << "Completed." << std::endl;
-    std::cout << std::endl;
 }
 
 void UtilsTester::testConvertToInt() {
@@ -186,8 +184,6 @@ void UtilsTester::testConvertToInt() {
                   << "\" result=" << result << " isValid=" << isValid << std::endl;
         return;
     }
-    std::cout << "Completed." << std::endl;
-    std::cout << std::endl;
 }
 
 void UtilsTester::testConvertToUnsignedInt() {
@@ -278,8 +274,6 @@ void UtilsTester::testConvertToUnsignedInt() {
                   << "\" result=" << result << " isValid=" << isValid << std::endl;
         return;
     }
-    std::cout << "Completed." << std::endl;
-    std::cout << std::endl;
 }
 
 
@@ -410,8 +404,6 @@ void UtilsTester::testConvertToDouble() {
                   << "\" result=" << result << " isValid=" << isValid << std::endl;
         return;
     }
-    std::cout << "Completed." << std::endl;
-    std::cout << std::endl;
 }
 
 void UtilsTester::testLeftTrim() {
@@ -488,8 +480,6 @@ void UtilsTester::testLeftTrim() {
                   << "\" result=" << result << std::endl;
         return;
     }
-    std::cout << "Completed." << std::endl;
-    std::cout << std::endl;
 }
 
 
@@ -567,8 +557,6 @@ void UtilsTester::testRightTrim() {
                   << "\" result=" << result << std::endl;
         return;
     }
-    std::cout << "Completed." << std::endl;
-    std::cout << std::endl;
 }
 
 void UtilsTester::testTrim() {
@@ -645,6 +633,4 @@ void UtilsTester::testTrim() {
                   << "\" result=" << result << std::endl;
         return;
     }
-    std::cout << "Completed." << std::endl;
-    std::cout << std::endl;
 }
