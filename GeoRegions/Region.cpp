@@ -172,8 +172,6 @@ void Region::display(std::ostream& out, unsigned int displayLevel, bool showChil
     double area = getArea();
     double density = (double) totalPopulation / area;
 
-    // TODO: compute the totalPopulation using a method
-
     out << std::setw(6) << getId() << "  "
         << getName() << ", population="
         << totalPopulation

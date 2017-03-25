@@ -51,9 +51,7 @@ public:
     void addRegion(Region* newRegion);
     void deleteRegion(int id);
     int getSubRegionCount() { return m_subRegionsCount; };
-    std::vector<Region*> getSubRegions() { return m_subRegions; };
 
-    // TODO: Add method to compute total population, as m_population + the total population for all sub-regions
     unsigned int computeTotalPopulation();
 
     void list(std::ostream& out);
